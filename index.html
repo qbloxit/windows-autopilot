@@ -1,14 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>QBlox Device Setup</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Setup Your Qblox Device</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0e0f13;
+      color: #eaeaea;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    img.logo {
+      width: 180px;
+      margin-bottom: 40px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+    p {
+      font-size: 1.1rem;
+      color: #b0b0b0;
+      max-width: 500px;
+      margin-bottom: 30px;
+    }
+    a button {
+      background-color: #00e2c3;
+      color: #0e0f13;
+      border: none;
+      padding: 16px 40px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    a button:hover {
+      background-color: #00c1a9;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
 </head>
-<body style="font-family: sans-serif; text-align: center; margin-top: 100px;">
-  <h1>Welcome to QBlox</h1>
-  <p>Click the button below to install your device configuration.</p>
+<body>
+
+  <img class="logo" src="https://www.qblox.com/wp-content/uploads/2022/08/qblox-logo-white.svg" alt="Qblox Logo">
+
+  <h1>Set Up Your Device</h1>
+  <p>Welcome to Qblox. Click below to configure your new device securely and automatically in just one step.</p>
+
   <a href="https://github.com/qbloxit/windows-autopilot/releases/download/v1/QBloxSetup.exe">
-    <button style="padding: 15px 30px; font-size: 16px;">Set Up My Device</button>
+    <button>Set Up My Device</button>
   </a>
-  <p>If prompted, run the downloaded installer to complete setup.</p>
+
+  <footer>Need help? Contact <a href="mailto:support@qblox.com" style="color: #00e2c3;">support@qblox.com</a></footer>
+
 </body>
 </html>
