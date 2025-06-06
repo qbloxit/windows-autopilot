@@ -3,69 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Setup Your Qblox Device</title>
+  <title>Qblox Device Setup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0e0f13;
-      color: #eaeaea;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at 20% 20%, #1f1f3f, #0e0f13);
+      color: #e6e6e6;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
       text-align: center;
-      padding: 20px;
+      padding: 40px 20px;
     }
-    img.logo {
+    .logo {
       width: 180px;
       margin-bottom: 40px;
     }
     h1 {
       font-size: 2.5rem;
-      margin-bottom: 10px;
-      color: #ffffff;
+      margin-bottom: 12px;
     }
     p {
-      font-size: 1.1rem;
-      color: #b0b0b0;
-      max-width: 500px;
-      margin-bottom: 30px;
+      font-size: 1.15rem;
+      max-width: 520px;
+      color: #c0c0c0;
+      margin-bottom: 32px;
     }
-    a button {
+    .button {
       background-color: #00e2c3;
       color: #0e0f13;
       border: none;
-      padding: 16px 40px;
+      padding: 16px 48px;
       font-size: 1rem;
-      font-weight: bold;
-      border-radius: 8px;
+      font-weight: 600;
+      border-radius: 50px;
       cursor: pointer;
       transition: all 0.3s ease;
+      box-shadow: 0 0 16px rgba(0, 226, 195, 0.4);
     }
-    a button:hover {
+    .button:hover {
       background-color: #00c1a9;
+      box-shadow: 0 0 24px rgba(0, 226, 195, 0.6);
     }
     footer {
-      margin-top: 40px;
+      margin-top: 60px;
       font-size: 0.9rem;
-      color: #555;
+      color: #666;
+    }
+    footer a {
+      color: #00e2c3;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-
   <img class="logo" src="https://www.qblox.com/wp-content/uploads/2022/08/qblox-logo-white.svg" alt="Qblox Logo">
 
-  <h1>Set Up Your Device</h1>
-  <p>Welcome to Qblox. Click below to configure your new device securely and automatically in just one step.</p>
+  <h1>Qblox Device Setup</h1>
+  <p>Click the button below to configure your Windows device with Qblox security tools. This will install our secure agent automatically.</p>
 
-  <a href="https://github.com/qbloxit/windows-autopilot/releases/download/v1/QBloxSetup.exe">
-    <button>Set Up My Device</button>
+  <a href="https://github.com/qbloxit/qblox-setup/releases/download/v1.0/QBloxSetup.exe">
+    <button class="button">Set Up My Device</button>
   </a>
 
-  <footer>Need help? Contact <a href="mailto:support@qblox.com" style="color: #00e2c3;">support@qblox.com</a></footer>
-
+  <footer>
+    Need help? Email <a href="mailto:it@qblox.com">it@qblox.com</a>
+  </footer>
 </body>
 </html>
