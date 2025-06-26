@@ -4,15 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Qblox Device Setup</title>
+  <link rel="icon" type="image/svg+xml" href="./qblox.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --qblox-blue: #00819d;
+      --white: #ffffff;
+    }
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: radial-gradient(circle at 20% 20%, #1f1f3f, #0e0f13);
-      color: #e6e6e6;
+      background: var(--white);
+      color: var(--qblox-blue);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -32,12 +37,12 @@
     p {
       font-size: 1.15rem;
       max-width: 520px;
-      color: #c0c0c0;
+      color: var(--qblox-blue);
       margin-bottom: 32px;
     }
     .button {
-      background-color: #00e2c3;
-      color: #0e0f13;
+      background-color: var(--qblox-blue);
+      color: var(--white);
       border: none;
       padding: 16px 48px;
       font-size: 1rem;
@@ -45,22 +50,29 @@
       border-radius: 50px;
       cursor: pointer;
       transition: all 0.3s ease;
-      box-shadow: 0 0 16px rgba(0, 226, 195, 0.4);
+      box-shadow: 0 0 16px rgba(0, 129, 157, 0.4);
     }
     .button:hover {
-      background-color: #00c1a9;
-      box-shadow: 0 0 24px rgba(0, 226, 195, 0.6);
+      background-color: #006f89;
+      box-shadow: 0 0 24px rgba(0, 129, 157, 0.6);
     }
     footer {
       margin-top: 60px;
       font-size: 0.9rem;
-      color: #666;
+      color: var(--qblox-blue);
     }
     footer a {
-      color: #00e2c3;
-      text-decoration: none;
+      color: var(--qblox-blue);
+      text-decoration: underline;
     }
   </style>
+  <script>
+    window.onload = function () {
+      setTimeout(function () {
+        alert("Next step: Please go to your Downloads folder and install the software you just downloaded.");
+      }, 2000);
+    }
+  </script>
 </head>
 <body>
   <img class="logo" src="https://www.qblox.com/wp-content/uploads/2022/08/qblox-logo-white.svg" alt="Qblox Logo">
