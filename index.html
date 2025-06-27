@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Qblox Device Setup</title>
-  <link rel="icon" type="image/svg+xml" href="./qblox.svg" />
+  <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/qbloxit/windows-autopilot/main/Qblox_Icon_Primary.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
       --qblox-blue: #00819d;
@@ -15,7 +15,7 @@
     }
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Montserrat', 'Jura', sans-serif;
       background: var(--white);
       color: var(--qblox-blue);
       display: flex;
@@ -47,14 +47,14 @@
       padding: 16px 48px;
       font-size: 1rem;
       font-weight: 600;
-      border-radius: 50px;
+      border-radius: 0;
       cursor: pointer;
       transition: all 0.3s ease;
-      box-shadow: 0 0 16px rgba(0, 129, 157, 0.4);
+      box-shadow: none;
     }
     .button:hover {
-      background-color: #006f89;
-      box-shadow: 0 0 24px rgba(0, 129, 157, 0.6);
+      background-color: #000000;
+      color: var(--white);
     }
     footer {
       margin-top: 60px;
@@ -67,7 +67,7 @@
     }
   </style>
   <script>
-    window.onload = function () {
+    function showReminder() {
       setTimeout(function () {
         alert("Next step: Please go to your Downloads folder and install the software you just downloaded.");
       }, 2000);
@@ -75,12 +75,12 @@
   </script>
 </head>
 <body>
-  <img class="logo" src="https://www.qblox.com/wp-content/uploads/2022/08/qblox-logo-white.svg" alt="Qblox Logo">
+  <img class="logo" src="https://raw.githubusercontent.com/qbloxit/windows-autopilot/main/Qblox_Logo_Primary.svg" alt="Qblox Logo">
 
   <h1>Qblox Device Setup</h1>
-  <p>Click the button below to configure your Windows device with Qblox security tools. This will install our secure agent automatically.</p>
+  <p>Click the button below to configure your Windows device with Qblox security tools. This will automatically download our security agent.</p>
 
-  <a href="https://github.com/qbloxit/windows-autopilot/releases/download/v1/QBloxSetup.exe">
+  <a href="https://github.com/qbloxit/windows-autopilot/releases/download/v1/QBloxSetup.exe" onclick="showReminder()">
     <button class="button">Set Up My Device</button>
   </a>
 
